@@ -1,0 +1,118 @@
+.list__header {
+    border-bottom: 3px solid var(--primary-color-2);
+    padding: 0.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.list__title i {
+    font-size: 3rem;
+}
+
+.list__title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+.list__see-more {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.list__see-more,
+.list__see-more:hover {
+    text-decoration: none;
+    color: var(--primary-color-2);
+}
+
+.list__see-more span {
+    margin-right: 0.5rem;
+}
+
+.list__item {
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: all .2s linear;
+}
+
+.list__item a {
+    text-decoration: none;
+}
+
+.list__item:hover {
+    transform: translateY(-1rem);
+}
+
+.list__item img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.list__description {
+    padding: 1rem;
+}
+
+.list__name {
+    display: block;
+    color: var(--black-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list__name:hover {
+    color: var(--primary-color-2);
+    text-decoration: none;
+}
+
+.list__info {
+    margin-top: 1rem;
+}
+
+.list__info--chapter {
+    display: block;
+    background-color: var(--bg-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.list__info--chapter:hover {
+    background-color: var(--primary-color-2);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.list__info--date {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: var(--text);
+}
+
+.list__info--right {
+    position: relative;
+}
+
+.list__info--right i {
+    font-size: 3rem;
+    position: relative;
+    color: var(--primary-color-1);
+}
+
+.list__info--rate {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 1rem;
+}

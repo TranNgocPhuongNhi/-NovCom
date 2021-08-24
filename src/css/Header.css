@@ -1,0 +1,253 @@
+.header__logo,
+#search {
+    width: 100%;
+}
+
+#search__text {
+    width: 45%;
+    border: 0.2rem solid var(--primary-color-1);
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+}
+
+#search__text::placeholder {
+    color: var(--text);
+    font-size: 1.4rem;
+}
+
+.control-bar {
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.control-bar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.3rem;
+    height: 100%;
+    background-color: red;
+}
+
+.control-bar__item {
+    font-size: 1.4rem;
+}
+
+.control-bar__item a:hover {
+    text-decoration: none;
+    color: var(--primary-color-2);
+}
+
+.control-bar__item span{
+    padding: 0 0.3rem;
+}
+
+/* ====================================== Navigation Bar ============================= */
+#nav {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: 100vh;
+    background-color: var(--primary-color-2);
+    z-index: 99;
+    transition: transform 0.3s linear;
+    /* transform: translateX(-10rem); */
+}
+
+#nav::before {
+    content: "\f053";
+    width: 5rem;
+    height: 7rem;
+    background-color: var(--primary-color-2);
+    border-radius: 1rem;
+    position: absolute;
+    top: 3rem;
+    right: -3rem;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 2rem;
+    text-align: right;
+    line-height: 3.5;
+    padding-right: 1rem;
+    color: var(--white-color);
+    cursor: pointer;
+    z-index: -1;
+}
+
+.nav__item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav__item:hover  {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+    padding: 1.5rem;
+}
+
+.nav__item .active {
+    color: var(--primary-color-2);
+    background-color: var(--white-color);
+}
+
+.nav__item a {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.nav__item a i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.nav__adjust {
+    margin-bottom: 3rem;
+}
+
+.nav__adjust li {
+    padding: 0.8rem 0;
+}
+
+.adjust-theme {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+}
+
+.adjust-theme i {
+    font-size: 2rem;
+    color: var(--primary-color-2);
+}
+
+.nav__adjust li:first-child > i:hover {
+    cursor: pointer;
+}
+
+.adjust-theme:hover,
+.adjust-theme > .active-dark-theme {
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+
+.nav__adjust li:last-child {
+    padding: 0 1rem;
+}
+
+.name-language label {
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.toggle__input {
+    display: none;
+}
+
+.toggle__bar {
+    width: 8rem;
+    height: 4rem;
+    background-color: var(--bg-color);
+    border-radius: 5rem;
+    padding: 5px;
+    transition: background-color 0.2s linear;
+}
+
+.toggle__spin {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--white-color);
+    border-radius: 3rem;
+    transition: transform 0.3s linear;
+}
+
+.toggle__input:checked + .toggle__bar {
+    background-color: var(--primary-color-1);
+}
+
+.toggle__input:checked + .toggle__bar .toggle__spin{
+    transform: translateX(4rem);
+}
+
+/* ==================================== Đăng ký, đăng nhập ============================ */
+
+.btn-sign-up-in-out {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    z-index: 99;
+}
+
+.btn-sign-up-in-out li {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.btn-sign-up-in-out li span {
+    position: absolute;
+    top: 1.6rem;
+    left: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    z-index: -1;
+    transition: transform 0.3s linear;
+}
+
+.btn-sign-up-in-out li button {
+    border: none;
+    width: 8rem;
+    height: 5rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn-sign-up-in-out li button:hover + span {
+    transform: translateX(-7rem);
+}
+
+.btn-sign-up-in-out li button i{
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+#form-sign-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    padding: 4rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    width: 50rem;
+    z-index: 88;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-group input {
+    padding: 1rem;
+    width: 100%;
+}

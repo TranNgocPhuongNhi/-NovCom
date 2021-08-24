@@ -1,0 +1,134 @@
+#home__left,
+#home__right {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    color: var(--white-color);
+    font-family: "Space Mono", sans-serif;
+}
+
+#home__left {
+    background-color: var(--primary-color-1);
+}
+
+#home__right {
+    background-color: var(--primary-color-2);
+}
+
+#home__left h1,
+#home__right h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#home__left span,
+#home__right span {
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.left-top {
+    top: 12rem;
+    left: -3rem;
+    transform: rotate(-90deg);
+}
+
+.left-bottom {
+    bottom: 12rem;
+    right: -2rem;
+    transform: rotate(-270deg);
+}
+
+.right-top {
+    top: 12rem;
+    right: -4rem;
+    transform: rotate(90deg);
+}
+
+.right-bottom {
+    bottom: 12rem;
+    left: -3rem;
+    transform: rotate(270deg);
+}
+
+.home__choose-language {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+}
+
+.session-choose-language {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    width: 60rem;
+    height: 25rem;
+}
+
+.home__choose-language--left,
+.home__choose-language--right {
+    width: 50%;
+}
+
+.home__logo {
+    height: 25rem;
+}
+
+.home__logo > img {
+    width: 20rem;
+    object-fit: contain;
+}
+
+.choose-language {
+    margin: 2rem 0;
+}
+
+.title-choose-language {
+    font-size: 2rem;
+    margin-top: 6rem;
+}
+
+.flag {
+    width: 8rem;
+    height: 5rem;
+    margin: 0 1rem;
+}
+
+@media (max-width: 991px) {
+    #home__left h1,
+    #home__right h1 {
+        font-size: 5rem;
+    }
+    
+    #home__left span,
+    #home__right span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .session-choose-language {
+        width: 40rem;
+    }
+
+    .home__logo > img {
+        width: 15rem;
+    }
+    
+    .flag {
+        width: 6rem;
+        height: 4rem;
+    }
+}

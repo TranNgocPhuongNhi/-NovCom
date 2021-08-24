@@ -1,0 +1,77 @@
+#reading {
+    margin-bottom: 5rem;
+}
+
+.reading__navigation-item {
+    font-size: 1.6rem;
+}
+
+.btn-reading-nav {
+    width: 8rem;
+    height: 4rem;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color-1);
+    text-align: center;
+    color: var(--white-color);
+    line-height: 2.5;
+    cursor: pointer;
+    /* transition: opacity 0.3s linear; */
+}
+
+.btn-reading-nav:hover {
+    opacity: 0.8;
+}
+
+.reading__navigation-item:nth-of-type(2) {
+    margin: 0 1rem;
+}
+
+.reading__navigation-select-chapter {
+    width: 15rem;
+    height: 4rem;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    background-color: var(--bg-color);
+    padding: 0 1rem;
+}
+
+.reading__content {
+    background-color: var(--bg-color);
+    margin: 2rem 0;
+    padding: 3rem 0;
+}
+
+.reading__novel,
+.reading__comic {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.name-novel,
+.name-comic {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color-2);
+    text-align: center;
+}
+
+.name-comic {
+    color: var(--primary-color-1);
+}
+
+.chapter-number {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.novel-content {
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+.novel-content, 
+.comic-content {
+    margin-top: 5rem;
+}

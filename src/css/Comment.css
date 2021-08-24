@@ -1,0 +1,76 @@
+.comment__img-user {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment__textarea {
+    width: 90%;
+    height: 10rem;
+    resize: none;
+    font-size: 1.4rem;
+    padding: 2rem;
+    outline: none;
+    border-color: var(--text);
+}
+
+.comment__textarea::placeholder {
+    color: var(--text);
+}
+
+.comment__others {
+    margin-top: 3rem;
+}
+
+.comment__others-item {
+    margin-bottom: 3rem;
+}
+
+.comment__img-other-user {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment__others--content {
+    margin-left: 1rem;
+    width: 80%;
+}
+
+.comment__others--name {
+    font-weight: 700;
+}
+
+.comment__others--comment {
+    font-size: 1.6rem;
+}
+
+.comment__others--interact {
+    font-size: 1.4rem;
+}
+
+.comment__others--like,
+.comment__others--reply {
+    cursor: pointer;
+}
+
+.comment__others--like i {
+    color: #cecece;
+}
+
+.comment__others--like .like{
+    color: var(--primary-color-2);
+}
+
+.total-like {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.comment__time {
+    font-style: italic;
+    color: var(--text);
+    margin: 0 2rem;
+}

@@ -1,0 +1,74 @@
+:root {
+	--primary-color-1: #00B01E;
+	--primary-color-2: #ff4444;
+	--secondary-color: #e09f27;
+	/* --secondary-color-2: #f0f1f4; */
+	--black-color: #333333;
+	--white-color: #ffffff;
+	--text: #999999;
+	--bg-color: #eee;
+	--border-radius: 5px;
+	--linear-gradient: linear-gradient(to right, #00B01E 0%, #ff4444 100%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	color: var(--black-color);
+	font-size: 62.5%;
+	font-family: -apple-system, 'Roboto', 'Helvetica Neue', sans-serif,
+    sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+ul {
+  list-style: none;
+}
+
+input:focus,
+button:focus {
+	outline: none;
+}
+
+.bg-primary-color-1 {
+	background-color: var(--primary-color-1);
+}
+
+.bg-primary-color-2 {
+	background-color: var(--primary-color-2);
+}
+
+.text-primary-color-1 {
+	color: var(--primary-color-1);
+}
+
+.text-primary-color-2 {
+	color: var(--primary-color-2);
+}
+
+.icon {
+	width: 5rem;
+	height: 5rem;
+}
+
+.btn-green {
+	border: none;
+	padding: 1.2rem 2rem;
+	background-color: var(--primary-color-1);
+	color: var(--white-color);
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+/* ============================================================ RESPONSIVE ================================================================= */

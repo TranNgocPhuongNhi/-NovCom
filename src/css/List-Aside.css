@@ -1,0 +1,122 @@
+.list-aside__title {
+    width: 15rem;
+    height: 3.5rem;
+    background: var(--linear-gradient);
+    /* border-radius: var(--border-radius); */
+    color: var(--white-color);
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.2;
+    position: relative;
+}
+
+.list-aside__title:before {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 1rem;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid var(--primary-color-1);
+	border-bottom: 10px solid transparent;
+    z-index: -1;
+}
+
+.list-aside__read-more {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.list-aside__read-more::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color-2);
+    transition: width 0.2s linear;
+}
+
+.list-aside__read-more:hover {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.list-aside__read-more:hover::after {
+    width: 100%;
+}
+
+.list-aside__content {
+    margin: 3rem 0;
+}
+
+.list-aside__item{
+    width: 100%;
+    /* height: 10rem; */
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 20px rgba(51, 51, 51, 0.11);
+    position: relative;
+}
+
+.list-aside__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color-2);
+    transition: width 0.3s linear;
+}
+
+.list-aside__item:hover::before {
+    width: 100%;
+}
+
+.list-aside__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.list-aside__description {
+    margin-left: 1rem;
+    width: 20rem;
+}
+
+.list-aside__info {
+    margin-top: 1rem;
+}
+
+.list-aside__info--chapter {
+    display: block;
+    background-color: var(--bg-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.list-aside__info--chapter:hover {
+    background-color: var(--primary-color-2);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+
+@media (max-width: 991px) {
+    .list-aside__description {
+        width: 55rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-aside__description {
+        width: 30rem;
+    }
+}
