@@ -75,11 +75,11 @@ class Detail extends React.Component {
                                                 <div className="detail__rating-bookmark d-flex justify-content-between">
                                                     <div className="detail__rating d-flex flex-column align-items-center justify-content-between">
                                                         <ul className="detail__star-list d-flex align-items-center">
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="far fa-star"></i></li>
+                                                            <li><i className="fas fa-star"></i></li>
+                                                            <li><i className="fas fa-star"></i></li>
+                                                            <li><i className="fas fa-star"></i></li>
+                                                            <li><i className="fas fa-star"></i></li>
+                                                            <li><i className="far fa-star"></i></li>
                                                         </ul>
                                                         <h1 className="detail__rating--total">4.8</h1>
                                                     </div>
@@ -108,8 +108,8 @@ class Detail extends React.Component {
                             <li className="tab-item active-panel">Giới thiệu truyện</li>
                             <li className="tab-item">
                                 Danh sách truyện
-                                {/* <i class="fal fa-sort-amount-up"></i> */}
-                                <i class="fal fa-sort-amount-down"></i>
+                                {/* <i className="fal fa-sort-amount-up"></i> */}
+                                <i className="fal fa-sort-amount-down"></i>
                             </li>
                             <li className="tab-item">Cùng tác giả</li>
                             <li className="tab-item">Bản dịch khác</li>
@@ -134,7 +134,7 @@ class Detail extends React.Component {
                                                     <div className="chapter-info">
                                                         <p className="date-updated-chapter">{value.updatedDate}</p>
                                                         <p className="total-read-chapter">
-                                                            <i class="far fa-eye"></i>
+                                                            <i className="far fa-eye"></i>
                                                             <span>{value.seen}</span>
                                                         </p>
                                                     </div>
@@ -183,7 +183,7 @@ class Detail extends React.Component {
                         <div className="list__content">
                             <div className="list__header d-flex align-items-center justify-content-between">
                                 <div className="list__title d-flex align-items-center text-primary-color-2">
-                                    <i class="fas fa-heart"></i>
+                                    <i className="fas fa-heart"></i>
                                     <h1>có thể bạn thích</h1>
                                 </div>
                             </div>
@@ -204,7 +204,7 @@ class Detail extends React.Component {
                         <div className="list__content">
                             <div className="list__header d-flex align-items-center justify-content-between">
                                 <div className="list__title d-flex align-items-center text-primary-color-2">
-                                    <i class="fas fa-book-open"></i>
+                                    <i className="fas fa-book-open"></i>
                                     <h1>truyện tranh</h1>
                                 </div>
                                 <a href="#" className="list__see-more">

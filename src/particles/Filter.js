@@ -2,6 +2,23 @@ import '../css/Filter.css';
 import React from 'react';
 
 class Filter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            active_filter : false,
+        }
+    }
+
+    // activeFilter = () => {
+    //     if(this.state.active_filter === false) {
+    //         console.log(false)
+    //     }
+    //     else {
+    //         this.setState(state => ({active_filter: !state.active_filter}))
+    //         console.log(true)
+    //     }
+    // }
+
     render() {
         return (
             <div id="filter">
@@ -9,9 +26,9 @@ class Filter extends React.Component {
                     <div className="filter-container">
                         <ul className="filter__list d-flex align-items-center">
                             <li className="filter__item">
-                                <div className="filter__box d-flex align-items-center justify-content-between">
+                                <div className="filter__box d-flex align-items-center justify-content-between" >
                                     <span>Tình trạng</span>
-                                    <i class="fal fa-angle-down"></i>
+                                    <i className="fal fa-angle-down"></i>
                                 </div>
                                 <ul className="filter__choose">
                                     <li>Tất cả</li>
@@ -22,7 +39,7 @@ class Filter extends React.Component {
                             <li className="filter__item">
                                 <div className="filter__box d-flex align-items-center justify-content-between">
                                     <span>Thể loại</span>
-                                    <i class="fal fa-angle-down"></i>
+                                    <i className="fal fa-angle-down"></i>
                                 </div>
                                 <ul className="filter__choose filter__choose--category">
                                     <div className="row">

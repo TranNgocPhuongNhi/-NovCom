@@ -1,6 +1,6 @@
 import '../css/Header.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../img/logo.png';
 
 class Header extends React.Component {
@@ -68,7 +68,7 @@ class Header extends React.Component {
                                 <label id="vn">VN</label>
                                 <label id="en">EN</label>
                             </span>
-                            <label for="toggle-input" className="toggle">
+                            <label htmlFor="toggle-input" className="toggle">
                                 <input type="checkbox" className="toggle__input" id="toggle-input"></input>
                                 <div className="toggle__bar">
                                     <div className="toggle__spin"></div>
@@ -82,7 +82,7 @@ class Header extends React.Component {
                     <ul className="btn-sign-up-in-out">
                         <li className="btn-sign-up">
                             <button className="bg-primary-color-2">
-                                <i class="fal fa-pen"></i>
+                                <i className="fal fa-pen"></i>
                             </button>
                             <span className="text-primary-color-2">Đăng ký</span>
                         </li>
@@ -105,23 +105,23 @@ class Header extends React.Component {
                     {/* <form id="form-sign-up">
                         <div className="form-group">
                             <input type="text" placeholder="abc123"></input>
-                            <label for="sign-up">Đăng ký</label>
+                            <label htmlFor="sign-up">Đăng ký</label>
                         </div>
                         <div className="form-group">
                             <input type="password" placeholder="123456"></input>
-                            <label for="password">Mật khẩu</label>
+                            <label htmlFor="password">Mật khẩu</label>
                         </div>
                         <div className="form-group">
                             <input type="password" placeholder="123456"></input>
-                            <label for="re-password">Nhập lại mật khẩu</label>
+                            <label htmlFor="re-password">Nhập lại mật khẩu</label>
                         </div>
-                        <div class="sign-up-with-others d-flex justify-content-center align-items-center">
-                           <button class="facebook">
-                                <i class="fab fa-facebook-f"></i>
+                        <div className="sign-up-with-others d-flex justify-content-center align-items-center">
+                           <button className="facebook">
+                                <i className="fab fa-facebook-f"></i>
                                 Facebook
                             </button>
-                           <button class="google">
-                               <i class="fab fa-google"></i>
+                           <button className="google">
+                               <i className="fab fa-google"></i>
                                Google
                             </button>
                        </div>

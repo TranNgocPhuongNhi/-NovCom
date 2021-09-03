@@ -15,7 +15,7 @@ class All extends React.Component {
                         <div className="list__content">
                             <div className="list__header d-flex align-items-center justify-content-between">
                                 <div className="list__title d-flex align-items-center text-primary-color-2">
-                                    <i class="fas fa-list"></i>
+                                    <i className="fas fa-list"></i>
                                     <h1>tất cả truyện</h1>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ class All extends React.Component {
                         <div className="list__content">
                             <div className="list__header d-flex align-items-center justify-content-between">
                                 <div className="list__title d-flex align-items-center text-primary-color-2">
-                                    <i class="fas fa-book-open"></i>
+                                    <i className="fas fa-book-open"></i>
                                     <h1>truyện tranh</h1>
                                 </div>
                                 <a href="#" className="list__see-more">

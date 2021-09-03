@@ -7,7 +7,7 @@ class Comment extends React.Component {
             <div id="comment">
                 <div className="list__header d-flex align-items-center justify-content-between">
                     <div className="list__title d-flex align-items-center text-primary-color-2">
-                        <i class="fas fa-comments-alt"></i>
+                        <i className="fas fa-comments-alt"></i>
                         <h1>bình luận</h1>
                     </div>
                 </div>
@@ -25,13 +25,13 @@ class Comment extends React.Component {
                                     <p className="comment__others--comment">Đây là nội dung bình luận</p>
                                     <div className="comment__others--interact d-flex align-items-center">
                                         <div className="comment__others--interact-left comment__others--like">
-                                            <i class="fas fa-heart"></i>
+                                            <i className="fas fa-heart"></i>
                                             <span className="total-like">520</span>
                                         </div>
                                         <div className="comment__others--interact-right d-flex">
                                             <span className="comment__time">1 phút</span>
                                             <div className="comment__others--reply">
-                                                <i class="fas fa-reply"></i>
+                                                <i className="fas fa-reply"></i>
                                             </div>
                                         </div>
                                     </div>

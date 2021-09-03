@@ -1,8 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import Detail from "../components/Detail";
-import DieuHuongURL from '../router/DieuHuongURL';
-
 class NewItemsCol4 extends React.Component {
     constructor(props) {
         super(props);

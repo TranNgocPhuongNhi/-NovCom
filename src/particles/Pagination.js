@@ -7,7 +7,7 @@ class Pagination extends React.Component {
             <section id="pagination">
                 <ul className="list__pagination d-flex align-items-center justify-content-center">
                     <li className="list__pagination-item btn-prev btn-disable">
-                        <i class="fal fa-chevron-left"></i>
+                        <i className="fal fa-chevron-left"></i>
                     </li>
                     <li className="list__pagination-item">
                         <ul className="list__pagination--number-page d-flex align-items-center">
@@ -17,7 +17,7 @@ class Pagination extends React.Component {
                         </ul>
                     </li>
                     <li className="list__pagination-item btn-next">
-                        <i class="fal fa-chevron-right"></i>
+                        <i className="fal fa-chevron-right"></i>
                     </li>
                 </ul>
             </section>

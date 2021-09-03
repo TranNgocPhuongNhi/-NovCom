@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import data from './components/dulieu.json';
+import { BrowserRouter as Router } from "react-router-dom";
 import DieuHuongURL from './router/DieuHuongURL';
 import Header from './particles/Header';
 import Footer from './particles/Footer';

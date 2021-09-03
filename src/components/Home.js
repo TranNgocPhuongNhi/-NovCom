@@ -1,8 +1,8 @@
 import '../css/Home.css';
 import React from 'react';
-import logo from '../img/logo.png';
-import vnFLag from '../img/vn flag.png';
-import englandFLag from '../img/england flag.png';
+// import logo from '../img/logo.png';
+// import vnFLag from '../img/vn flag.png';
+// import englandFLag from '../img/england flag.png';
 import Filter from '../particles/Filter';
 import NewItemsCol3 from '../particles/NewItems-col3';
 import data from '../components/dulieu.json';
@@ -40,7 +40,7 @@ class Home extends React.Component {
             <div className="list__content">
               <div className="list__header d-flex align-items-center justify-content-between">
                   <div className="list__title d-flex align-items-center text-primary-color-2">
-                      <i class="fas fa-book-open"></i>
+                      <i className="fas fa-book-open"></i>
                       <h1>truyện tranh</h1>
                   </div>
                   <a href="#" className="list__see-more">
